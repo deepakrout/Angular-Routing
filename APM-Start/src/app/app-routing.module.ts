@@ -10,9 +10,9 @@ import { PageNotFoundComponent } from './page-not-found.component';
             { path: 'welcome', component: WelcomeComponent },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
             { path: '**', component: PageNotFoundComponent }
-          ],  {useHash: true}),
+        ], { useHash: true }),
     ],
-    exports: [ RouterModule],
+    exports: [RouterModule],
     providers: [],
 })
 export class AppRoutingModule { }
